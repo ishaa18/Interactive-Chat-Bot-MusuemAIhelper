@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum FAQ Chatbot</title>
+   <style>
+    body { 
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #f0f4ff; 
+}
+.chat-container {
+    width: 400px;
+    max-width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chat-header {
+    background-color: #6c5ce7;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.chat-messages {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.4;
+    max-width: 80%;
+}
+.message.user {
+    background-color: #6c5ce7;
+    color: #fff;
+    align-self: flex-end;
+}
+.message.bot {
+    background-color: #e9e9e9;
+    color: #333;
+    align-self: flex-start;
+}
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.chat-input button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+   </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">Museum FAQ Chatbot</div>
+    <div class="chat-messages" id="chatMessages">
+        <!-- Messages will be added here dynamically -->
+    </div>
+    <div class="chat-input">
+        <input type="text" id="question" placeholder="Type your question here..." required>
+        <button onclick="askQuestion()">Ask</button>
+    </div>
+</div>
+
+<script>
+async function askQuestion() {
+    const questionInput = document.getElementById("question");
+    const chatMessages = document.getElementById("chatMessages");
+
+    if (!questionInput.value) return;
+
+    // Add user question to chat
+    const userMessage = document.createElement("div");
+    userMessage.className = "message user";
+    userMessage.innerText = questionInput.value;
+    chatMessages.appendChild(userMessage);
+
+    try {
+        // Send POST request to the Flask API at /ask endpoint
+        const response = await fetch("/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question: questionInput.value })
+        });
+
+        const data = await response.json();
+        
+        // Display bot response in the chat
+        const botMessage = document.createElement("div");
+        botMessage.className = "message bot";
+        botMessage.innerHTML = `<strong>Answer:</strong> ${data.answer}`;
+        chatMessages.appendChild(botMessage);
+
+    } catch (error) {
+        console.error("Error:", error);
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "message bot";
+        errorMessage.innerText = "There was an error. Please try again.";
+        chatMessages.appendChild(errorMessage);
+    }
+
+    questionInput.value = ""; // Clear the input
+    chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to bottom
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,169 @@
+{
+    "faqs": [
+      {
+        "question": "What are the museum's opening hours?",
+        "answer": "The museum is open from 10 AM to 6 PM daily."
+      },
+      {
+        "question": "Is the museum open on holidays?",
+        "answer": "Yes, we’re open on most holidays except for [insert specific holidays]."
+      },
+      {
+        "question": "Where is the museum located?",
+        "answer": "The museum is located at [insert full address]."
+      },
+      {
+        "question": "How do I get to the museum?",
+        "answer": "You can reach us by public transport, car, or bike. [Provide directions if needed]."
+      },
+      {
+        "question": "Does the museum have parking?",
+        "answer": "Yes, parking is available in our designated area for museum visitors."
+      },
+      {
+        "question": "What is the price of an adult ticket?",
+        "answer": "Tickets are $20 for adults."
+      },
+      {
+        "question": "How much is a child’s ticket?",
+        "answer": "Tickets for children under 12 are $10, and admission is free for children under 5."
+      },
+      {
+        "question": "Are there discounts for seniors or students?",
+        "answer": "Yes, we offer a $5 discount for seniors and students with valid ID."
+      },
+      {
+        "question": "Do you offer group discounts?",
+        "answer": "Yes, for groups of 10 or more, please contact us at [contact info]."
+      },
+      {
+        "question": "Can I buy tickets online?",
+        "answer": "Yes, tickets can be purchased online at [website link]."
+      },
+      {
+        "question": "What are the current exhibitions?",
+        "answer": "Our current exhibitions include [list exhibits or link to webpage]."
+      },
+      {
+        "question": "Are there any permanent exhibits?",
+        "answer": "Yes, we have several permanent exhibits, including [list major exhibits]."
+      },
+      {
+        "question": "What is the main attraction of the museum?",
+        "answer": "Our main attraction is [description of key exhibit or artifact]."
+      },
+      {
+        "question": "Are there interactive exhibits for children?",
+        "answer": "Yes, we have interactive exhibits in the children’s section."
+      },
+      {
+        "question": "Can I take photos in the exhibits?",
+        "answer": "Photography is allowed in most areas, except for specific exhibits with restricted photography signs."
+      },
+      {
+        "question": "Are there guided tours available?",
+        "answer": "Yes, we offer guided tours every hour. You can sign up at the front desk."
+      },
+      {
+        "question": "Can I book a private tour?",
+        "answer": "Yes, private tours are available. Please contact us at [contact info] for bookings."
+      },
+      {
+        "question": "Are there any upcoming events or special exhibitions?",
+        "answer": "Check our events page at [website link] for the latest information on upcoming events."
+      },
+      {
+        "question": "Do you offer virtual tours?",
+        "answer": "Yes, virtual tours are available on our website. Visit [link]."
+      },
+      {
+        "question": "Is there an audio guide available?",
+        "answer": "Yes, audio guides can be rented at the front desk for $5."
+      },
+   
+      {
+        "question": "Does the museum have a café or restaurant?",
+        "answer": "Yes, there’s a café on the ground floor offering food and drinks."
+      },
+      {
+        "question": "Is there a gift shop in the museum?",
+        "answer": "Yes, our gift shop is located near the entrance and offers a variety of souvenirs."
+      },
+      {
+        "question": "Is there Wi-Fi available?",
+        "answer": "Yes, free Wi-Fi is available for visitors."
+      },
+      {
+        "question": "Are lockers or storage facilities available?",
+        "answer": "Yes, lockers are available at the entrance for personal belongings."
+      },
+      {
+        "question": "Is there a lost and found?",
+        "answer": "Yes, please contact the information desk if you have lost any items."
+      },
+
+      {
+        "question": "Is the museum wheelchair accessible?",
+        "answer": "Yes, the museum is fully wheelchair accessible, including elevators to all floors."
+      },
+      {
+        "question": "Do you provide wheelchairs or strollers?",
+        "answer": "Wheelchairs and strollers are available upon request at the entrance."
+      },
+      {
+        "question": "Are there accessible restrooms?",
+        "answer": "Yes, accessible restrooms are available on each floor."
+      },
+      {
+        "question": "Do you offer services for the hearing or visually impaired?",
+        "answer": "We offer audio guides and large print materials. Please ask at the information desk."
+      },
+      {
+        "question": "Is there assistance available for visitors with disabilities?",
+        "answer": "Yes, our staff is trained to assist visitors with disabilities. Let us know if you need any specific help."
+      },
+    
+      {
+        "question": "Can I bring food and drinks into the museum?",
+        "answer": "Food and drinks are not allowed in the exhibit areas, but you’re welcome to enjoy them in the café."
+      },
+      {
+        "question": "Are pets allowed in the museum?",
+        "answer": "Only service animals are permitted inside the museum."
+      },
+      {
+        "question": "Is there a dress code for visitors?",
+        "answer": "We don’t have a strict dress code, but we ask visitors to dress respectfully."
+      },
+      {
+        "question": "Can I hold a private event at the museum?",
+        "answer": "Yes, we host private events. Please contact us at [contact info] for event bookings."
+      },
+      {
+        "question": "What should I do if I accidentally damage an exhibit?",
+        "answer": "Please report it to a museum staff member immediately for assistance."
+      },
+   
+      {
+        "question": "How can I become a museum member?",
+        "answer": "You can sign up for membership online or at the museum’s front desk."
+      },
+      {
+        "question": "What are the benefits of museum membership?",
+        "answer": "Membership benefits include free admission, discounts, and exclusive access to events."
+      },
+      {
+        "question": "Can I donate to the museum?",
+        "answer": "Yes, we welcome donations to support our exhibits and programs. Visit [donation link] for details."
+      },
+      {
+        "question": "Are there volunteer opportunities at the museum?",
+        "answer": "Yes, we’re always looking for volunteers. Contact us at [contact info] for more information."
+      },
+      {
+        "question": "Can I leave feedback about my visit?",
+        "answer": "Yes, we appreciate feedback. You can leave feedback at the front desk or on our website."
+      }
+    ]
+  }
+  
